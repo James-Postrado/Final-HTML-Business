@@ -1,0 +1,352 @@
+<html>
+    <head>
+        <script src = "js/bootstrap.bundle.min.js"></script>
+        <link rel = "stylesheet" href = "css/bootstrap.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+            body{
+                background-color: rgb(21, 29, 73);
+            }
+
+            #navigation{
+                background-image: url("pictures/bg/bgbanner.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            #navselect, #navsocial, .navbar-brand{
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                background-color: white;
+                border-radius: 0.5rem;
+            }
+
+            #navselect, #navsocial, .navbar-brand, h5{
+                font-size: 1.2rem;
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+                color: black;
+            }
+
+            #navselect, #navselectdrop{
+                padding-right: 1rem;
+                padding-left: 1rem;
+                border-style: solid;
+                border-radius: 2rem;
+                border-color: black;
+            }
+
+            #navsocial{
+                border-style: solid;
+                border-color: black;
+            }
+
+            #navselect:hover, #navsocial:hover{
+                filter: brightness(0.5);
+                transform: scale(0.9);
+            }
+
+            footer{
+                background-image: url("pictures/bg/bgbannerflipped.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+            
+        .black {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .head-text {
+            font-family: "Jersey 10", sans-serif;
+            color: white;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 60px;
+            letter-spacing: 4px;
+            word-spacing: 10px;
+            line-height: 50px;
+            text-align: justify;
+        }
+
+        .head-text-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .head-text-container p {
+            text-align: justify;
+            width: 100px;
+            color: white;
+            text-align: center;
+            
+        }
+
+        .body-container {
+            color: white;
+        }
+
+        hr {
+            border-color: white;
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media(max-width: 1000px){
+                .navbar-brand, h5, h3, h2{
+                    font-size: 1rem;
+                }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="sticky-top">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg p-3 navbar-white bg-white" id="navigation">
+                <div class="container-fluid">
+                    <div class="mx-auto order-0 bg-white px-3 rounded col text-center">
+                        <a class="mx-auto navbar-brand mx-auto w-100" href="#"><img src="pictures/logo/logo2.jpg" style="width: 5rem;" class="ms-3 rounded">MnM Cube Shop</a>
+                        <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active" id="navselect">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown bg-white" id="navselectdrop">
+                                <a class="nav-link dropdown-toggle" id="navselect" href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Know MnM
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-black">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="members.html">Members</a></li>
+                                    <li><a class="dropdown-item" href="contacts.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="navsocial">
+                                <a class="nav-link mx-2 text-center" href="https://www.facebook.com/MnMCubeShop" target="_blank"><img src="pictures/logo/facebook.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank"><img src="pictures/logo/youtube.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank"><img src="pictures/logo/tiktok.png" style="width: 3.5rem;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <!---BODY--->
+        <div class="container-fluid">
+            
+            <div class="row shadow">
+
+                <div class="col-0 col-md-1 black">
+
+                </div>
+
+                <div class="col-12-fluid col-lg-6 black p-5">
+                    <div class="head-text mt-5 text-center text-lg-start">
+                        Speedcubing News
+                    </div>
+
+                 
+                <p class="mt-4 text-center text-lg-start" style="color: white; text-align: justify; width: auto;">
+                    Stay updated on events and sales in MnM Cubeshop. Connect with fellow cubers, share your solving experiences, and participate in discussions about all things Rubik's Cube! 
+                    <br><br>
+                    Always be alert on our products, community, discounts, and more. 
+                </p>
+                   
+                </div> 
+
+                <div class="col-12-fluid col-lg-5 black p-0">
+                    <img src = "pictures/rubics_bg4.jpg" class = "object-fit-cover" style="height: 100%; width: 100%">
+                </div>  
+                
+            </div>
+   
+            <br>
+
+            <div class="container-fluid mt-5 body-container p-0">
+                <div class="row d-flex justify-content-center ">
+                    
+                    
+
+                    <div class="col-12 col-md-5 mb-3">
+                        
+                        <h3>MnM Cubeshop at Robinsons Pampanga</h3>
+
+                        <p style="text-align: justify;">
+                            <br>
+                            On May 19,
+
+                            Pampanga Speedcubing Open 2024 was upheld, many cube enthusiast participated and joined the event.
+                            <br><br> 
+                            We offer a captivating selection of Rubik's Cubes for all skill levels. Whether you're a curious beginner or a seasoned speedcuber, we have the perfect cube to ignite your passion.
+                            <br><br>
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-5">
+                        <div id="carouselExampleIndicators" class="carousel slide w-100">
+                            <div class="carousel-indicators bg-subtle">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner shadow rounded" style="height: 80%;">
+                              <div class="carousel-item active">
+                                <img src="pictures/carousel3.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="pictures/carousel2.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="pictures/carousel1.jpg" class = "d-block w-100 object-fit-cover" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+
+            <div class="row mt-3 d-flex justify-content-center">
+
+
+                <div class="col-12 col-md-10 px-4">
+
+                    <hr>
+                    <div class="row col-12">
+                        <h2 style="color: white;">Catch Up on What's Happening</h2>
+                    </div>
+
+                    <div class="row col-12 mt-5 d-flex justify-content-center">
+                        <div class="col-10 col-lg-4 mb-5">
+                            <div class="card shadow" style="width: 100%; height: auto;">
+                                <img src="pictures/event.jpg" class="card-img-top" alt="..." style="height: 31rem;">
+                                <div class="card-body">
+                                  <p class="card-text"><b> <a href = "https://www.worldcubeassociation.org/.../Bulacan.../register" target="_blank">Register Now - MNM BULACAN SPEEDCUBING OPEN 2024</b></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-10 col-lg-4 mb-5">
+                            <div class="card shadow" style="width: 100%; height: auto">
+                                <img src="pictures/restock.jpg" class="card-img-top" alt="..." style="height: 31rem;">
+                                <div class="card-body">
+                                  <p class="card-text"><b><a href = "https://www.facebook.com/photo/?fbid=842473077906979&set=a.623790709775218" target="_blank">Heads Up! We are restocking this coming June, check it out</a></b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-lg-4 mb-5">
+                            <div class="card shadow" style="width: 100%; height: auto">
+                                <img src="pictures/clearance.jpg" class="card-img-top" alt="..." style="height: 31rem;">
+                                <div class="card-body">
+                                  <p class="card-text"><b><a href="https://www.facebook.com/MnMCubeShop/posts/pfbid02tYDqv39qPxK9CWU7ojT4QphdA39N1QrGkTvA3ZFmjnCMYLzKvMECRE45AmVYwjN2l" target="_blank">Shop Now with our ongoing clearance sale with big discounts!</a></b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+         
+            </div>
+        </div>
+
+
+        <!---Footer--->
+        <div class="container-fluid">
+            <footer class="bg-white row row-cols-1 row-cols-lg-2 row-cols-xl-5 p-5 mt-5">
+                <div class="col mb-3">
+                    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img src="pictures/logo/logo1.jpg" class="rounded" style="width: 7rem; margin-left: 1rem; margin-right: 1rem;">
+                        <h5 class="text-black">©MnM Cube Shop 2024</h5>
+                    </a>
+                    
+                </div>
+
+                <div class="col mb-3"></div>
+
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">News</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-dark">Home</a></li>
+                        <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-dark">Products</a></li>
+                        <li class="nav-item mb-2"><a href="news.html" class="nav-link p-0 text-dark">News</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="members.html" class="nav-link p-0 text-dark">Members</a></li>
+                        <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0 text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">Links and Socials</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/MnMCubeShop" target="_blank" class="nav-link p-0 text-dark">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank" class="nav-link p-0 text-dark">Youtube</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank" class="nav-link p-0 text-dark">Tiktok</a></li>
+                        <li class="nav-item mb-2"><a href="https://shopee.ph/mnmcubeshopofficial" target="_blank" class="nav-link p-0 text-dark">Shopee</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">Developers</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/mervraphael.carlos" target="_blank" class="nav-link p-0 text-dark">Mervin Raphael Carlos</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/anthonyjames.postrado" target="_blank" class="nav-link p-0 text-dark">Anthony James Postrado</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61552012390944" target="_blank" class="nav-link p-0 text-dark">Cyryll James Rubio</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

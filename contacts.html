@@ -1,0 +1,422 @@
+<html>
+    <head>
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f1432f9f-3292-4bca-b775-07c1da78aca9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+        <script src = "js/bootstrap.bundle.min.js"></script>
+        <link rel = "stylesheet" href = "css/bootstrap.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        body{
+            background-color: rgb(21, 29, 73);
+        }
+
+        #navigation{
+            background-image: url("pictures/bg/bgbanner.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        #navselect, #navsocial, .navbar-brand{
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            background-color: white;
+            border-radius: 0.5rem;
+        }
+
+        #navselect, #navsocial, .navbar-brand, h5{
+            font-size: 1.2rem;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            color: black;
+        }
+
+        #navselect, #navselectdrop{
+            padding-right: 1rem;
+            padding-left: 1rem;
+            border-style: solid;
+            border-radius: 2rem;
+            border-color: black;
+        }
+
+        #navsocial{
+            border-style: solid;
+            border-color: black;
+        }
+
+        #navselect:hover, #navsocial:hover{
+            filter: brightness(0.5);
+            transform: scale(0.9);
+        }
+
+        footer{
+            background-image: url("pictures/bg/bgbannerflipped.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+            
+        .black {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .head-text {
+            font-family: "Jersey 10", sans-serif;
+            color: white;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 60px;
+            letter-spacing: 4px;
+            word-spacing: 5px;
+            line-height: 50px;
+        
+        }
+
+        .head-text-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .head-text-container p {
+            text-align: justify;
+            width: 100px;
+            color: white;
+            text-align: center;
+            
+        }
+
+        .name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: end;
+            gap: 15px;
+        }
+
+        input {
+            border-color: rgb(2, 162, 255);
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+        textarea {
+            border-color: rgb(2, 162, 255);
+            border-radius: 5px;
+            
+        }
+
+        .button-row .clear-btn {
+            background-color: rgba(130, 127, 127, 0.734);
+            border-width: 1px;
+            border-radius: 5px;
+        }
+
+        .button-row .submit-btn {
+            background-color: rgb(0, 140, 255);
+            border-width: 1px;
+            border-radius: 5px;
+        }
+
+        .button-row button {
+            width: 6rem;
+            transition: 0.3s;
+            border-style: none;
+        }
+
+        .button-row .clear-btn {
+            width: 6rem;
+            transition: 0.3s;
+            border-style: none;
+        }
+
+        .button-row button:active {
+            transform: scale(0.95);
+        }
+
+        .button-row .clear-btn:active {
+            transform: scale(0.95);
+        }
+
+        .bg-img {
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .icon-container {
+            width: 80px;
+            height: 50px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        .icon-container:active {
+            transform: scale(0.9);
+        }
+
+        @media(max-width: 1000px){
+                .navbar-brand, h5, h3, h2{
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <script type="Text/JavaScript">
+            function clearInput() {
+                document.getElementById('lname').value='';
+                document.getElementById('fname').value='';
+                document.getElementById('subject').value='';
+                document.getElementById('email').value='';
+                document.getElementById('message').value='';
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="sticky-top">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg p-3 navbar-white bg-white" id="navigation">
+                <div class="container-fluid">
+                    <div class="mx-auto order-0 bg-white px-3 rounded col text-center">
+                        <a class="mx-auto navbar-brand mx-auto w-100" href="#"><img src="pictures/logo/logo2.jpg" style="width: 5rem" class="ms-3 rounded">MnM Cube Shop</a>
+                        <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active" id="navselect">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown bg-white" id="navselectdrop">
+                                <a class="nav-link dropdown-toggle" id="navselect" href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Know MnM
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-black">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="members.html">Members</a></li>
+                                    <li><a class="dropdown-item" href="contacts.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="navsocial">
+                                <a class="nav-link mx-2 text-center" href="https://www.facebook.com/MnMCubeShop" target="_blank"><img src="pictures/logo/facebook.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank"><img src="pictures/logo/youtube.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank"><img src="pictures/logo/tiktok.png" style="width: 3.5rem;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!----body---->
+        <div class="container-fluid">
+
+            <div class="row shadow">
+
+                <div class="col-0 col-lg-1 black">
+
+                </div>
+
+                <div class="col-12-fluid col-lg-6 black p-5 ">
+                    <div class="head-text mt-3 text-center text-lg-start">
+                        Get in touch 
+                    </div>
+                    <p style="color: white; text-align: justify; font-size: 20px;" class = "mt-3 text-center text-lg-start">Start a conversation with our team – we're happy to answer your questions</p>
+
+                 
+                    <p class="mt-4 text-center text-lg-start" style="color: white; text-align: justify; width: auto;">
+                        <b style="line-height: 25px;">Store Location:</b> <br>
+                        Marilao, Philippines, 3019
+                    </p>
+
+                    <p class="mt-4 text-center text-lg-start" style="color: white; text-align: justify; width: auto;">
+                        <b>Visit our socials:</b>
+                    </p>
+
+                    <div class="row d-flex mt-3 justify-content-lg-start justify-content-center col-12 ps-0 flex-nowrap">
+
+                            <div class="icon-container">
+                                <a href = "https://www.facebook.com/MnMCubeShop" target="_blank">
+                                    <img src="pictures/fb.png" class = "icon">
+                                </a>
+                            </div>
+                                         
+                            <div class="icon-container">
+                                <a href = "https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank">
+                                    <img src="pictures/tiktok.png" class = "icon">
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="icon-container">
+                                <a href = "https://shopee.ph/mnmcubeshopofficial" target="_blank">
+                                    <img src="pictures/shopee.png" class = "icon">
+                                </a>
+                            </div>
+                        
+                            <div class="icon-container">
+                                <a href = "https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank">
+                                    <img src="pictures/youtube.png" class = "icon">
+                                </a>
+                            </div>
+                        </a>
+                        
+                    </div>
+                   
+                </div> 
+
+                <div class="col-12-fluid col-lg-5 black p-0">
+                    <img src = "pictures/contacts.jpg" class = " object-fit-contain bg-img" style="height: 100%; width: 100%">
+                </div>  
+            </div>
+
+            <hr>
+
+            <div class="container-fluid mt-5">
+                <div class="row ps-3 d-flex justify-content-center gap-5">
+
+                    
+
+                    <div class="col-12 col-lg-5 ps-4 mb-3 rounded shadow bg-light" >
+                        <h3 style="text-align: center;" class = "mt-3">Email us your message</h3>
+
+                        <form name = "message-form" action="https://api.web3forms.com/submit" method="POST" class = "email-form">
+
+                            <input type="hidden" name="access_key" value="603a0ca3-6cea-428a-a735-e6875b9200ea">
+
+                            <div class="row col-12 name gap-1 p-0 mt-4">
+                                <input type="text" id = "fname" name = "First_Name" placeholder="First Name" class = "email-name col-6" required>
+                                <input type="text" id = "lname" name = "Last_Name" placeholder="Last Name" class = "email-name col-5" required>
+                            </div>
+
+                            <div class="row col-12 mt-4">
+                                <input type="text"  id = "subject" name = "Subject" placeholder="Subject" class = "email-subj col-12" required>
+                            </div>
+
+                            <div class="row col-12 mt-4">
+                                <input type="text" id = "email" name = "Email" placeholder="Email Address" class = "email-add col-12" required>
+                            </div>
+
+                            <div class="row col-12 mt-4">
+                                <textarea rows = "5" id = "message" name = "Message" placeholder="Write your message" class="email-message" required></textarea>
+                               
+                            </div>
+
+                            <div class="row col-12 mt-4">
+                                <div class="col-12 p-0 button-row">
+                                    <input type="button" value = "Clear" class = "clear-btn" onclick = "clearInput()">
+                                        
+                                    <button type = "submit" class = "submit-btn">
+                                        Submit
+                                    </button>
+                                </div>
+                            
+
+                            </div>
+                            <br>
+                        </forms>
+
+                    </div>
+
+                    <div class="col-12 col-lg-5 object-fit-cover shadow mb-3 rounded bg-light">
+                        <h2 style="text-align: center;" class = "mt-3">Chat with us</h2>
+
+                        <p style = "text-align: center;" class="mt-3">Have a conversation with us using the crisp chatbot, easily send your message to us and wait for the team's reply. An end-to-end communication that provides quick and convenient messaging.
+                        <br><br>Simply click the floating Crisp icon on your screen, and write your message.</p>
+
+                        <div class="row d-flex justify-content-center mt-5">
+                            <img src="pictures/crisp-logo.png" style="width: 50%; height: auto;" class = "mb-4">
+                        </div>
+                        
+                    </div>
+
+               
+                </div>
+            </div>
+        </div>
+
+
+        <!---Footer--->
+        <div class="container-fluid">
+            <footer class="bg-white row row-cols-1 row-cols-lg-2 row-cols-xl-5 p-5 mt-5">
+                <div class="col mb-3">
+                    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img src="pictures/logo/logo1.jpg" class="rounded" style="width: 7rem; margin-left: 1rem; margin-right: 1rem;">
+                        <h5 class="text-black">©MnM Cube Shop 2024</h5>
+                    </a>
+                    
+                </div>
+
+                <div class="col mb-3"></div>
+
+                <div class="col mb-3 bg-white p-4">
+                    <h5 class="text-dark">News</h5>
+                    <ul class="nav flex-column" style="--bs-bg-opacity: .9;">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-dark">Home</a></li>
+                        <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-dark">Products</a></li>
+                        <li class="nav-item mb-2"><a href="news.html" class="nav-link p-0 text-dark">News</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="members.html" class="nav-link p-0 text-dark">Members</a></li>
+                        <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0 text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">Links and Socials</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/MnMCubeShop" target="_blank" class="nav-link p-0 text-dark">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank" class="nav-link p-0 text-dark">Youtube</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank" class="nav-link p-0 text-dark">Tiktok</a></li>
+                        <li class="nav-item mb-2"><a href="https://shopee.ph/mnmcubeshopofficial" target="_blank" class="nav-link p-0 text-dark">Shopee</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">Developers</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/mervraphael.carlos" target="_blank" class="nav-link p-0 text-dark">Mervin Raphael Carlos</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/anthonyjames.postrado" target="_blank" class="nav-link p-0 text-dark">Anthony James Postrado</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61552012390944" target="_blank" class="nav-link p-0 text-dark">Cyryll James Rubio</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+            
+        
+
+    </body>
+</html>

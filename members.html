@@ -1,0 +1,527 @@
+<html>
+    <head>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>MnM Cube Shop</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+            body{
+                background-color: rgb(21, 29, 73);
+                
+            }
+
+            #navigation{
+                background-image: url("pictures/bg/bgbanner.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            #navselect, #navsocial, .navbar-brand{
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                background-color: white;
+                border-radius: 0.5rem;
+            }
+
+            #navselect, #navsocial, .navbar-brand, h5{
+                font-size: 1.2rem;
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+                color: black;
+            }
+
+            #navselect, #navselectdrop{
+                padding-right: 1rem;
+                padding-left: 1rem;
+                border-style: solid;
+                border-radius: 2rem;
+                border-color: black;
+            }
+
+            #navsocial{
+                border-style: solid;
+                border-color: black;
+            }
+
+            #navselect:hover, #navsocial:hover{
+                filter: brightness(0.5);
+                transform: scale(0.9);
+            }
+
+            footer{
+                background-image: url("pictures/bg/bgbannerflipped.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+
+            .team-member {
+            text-align: center;
+            margin: 10px 0;
+            background-color: #ffffff00;           
+            border: none;
+            box-shadow: none;
+            color: white;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .team-member h5 {
+            margin-top: 15px;
+            font-weight: bold;
+            
+        }
+        .team-member p {
+            margin: 0;
+            
+        }
+        .team-section {
+            background-color: #f7f9fc;
+            padding: 70px 0;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.962) 50%, rgb(21, 29, 73) 50%);
+            color: white;
+        }
+        .team-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: rgb(21, 29, 73);
+        }
+        .team-section p {
+            font-size: 1rem;
+            color: rgb(21, 29, 73);
+        }
+
+         .card {
+            margin-top: 20px;
+            
+        }
+        .card-img-top {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto 0;
+        }
+        .card-title {
+            margin-top: 10px;
+        }
+        .card-body {
+            text-align: center;
+            
+        }
+        .social-icons a {
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+        }
+        h1{
+            color: white;
+            margin-left: 50px;
+        }
+        .container-limit{
+            color: white;
+        }
+        .card-body .text-muted{
+            color: white;
+        }
+
+        @media(max-width: 1000px){
+                .navbar-brand{
+                    font-size: 1rem;
+                }
+
+                p, #mainmemberdesc{
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
+
+                h5{
+                    font-size: 2rem;
+                }
+
+                h2{
+                    font-size: 3rem;
+                }
+
+                #teammnm{
+                    font-size: 4rem;
+                }
+
+                #teammnmdesc{
+                    font-size: 2.5rem;
+                    margin-bottom: 9.5rem;
+                }
+
+                #mainmember{
+                    font-size: 2.4rem;
+                }
+            }
+
+        </style>
+    </head>
+    
+    <body>      
+            <!-- Navbar -->
+            <nav class="sticky-top navbar navbar-expand-lg p-3 navbar-white bg-white" id="navigation">
+                <div class="container-fluid">
+                    <div class="mx-auto order-0 bg-white px-3 rounded col text-center">
+                        <a class="mx-auto navbar-brand mx-auto w-100" href="#"><img src="pictures/logo/logo2.jpg" style="width: 5rem;" class="ms-3 rounded">MnM Cube Shop</a>
+                        <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active" id="navselect">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown bg-white" id="navselectdrop">
+                                <a class="nav-link dropdown-toggle" id="navselect" href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Know MnM
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-black">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="members.html">Members</a></li>
+                                    <li><a class="dropdown-item" href="contacts.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="navsocial">
+                                <a class="nav-link mx-2 text-center" href="https://www.facebook.com/MnMCubeShop" target="_blank"><img src="pictures/logo/facebook.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank"><img src="pictures/logo/youtube.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank"><img src="pictures/logo/tiktok.png" style="width: 3.5rem;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+            <div class="team-section">
+                <div class="container container-limit">
+                    <h2 class="text-center" id="teammnm">Team MnM Content Creators</h2>
+                    <p class="text-center" id="teammnmdesc">Meet the MnM Family. Discover the people that make our great store possible.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card team-member">
+                                <img src="pictures/abt&memb/Team-MnM.jpg" class="card-img-top mx-auto mt-3" alt="Fred Morrison">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="mainmember">Julia Casquejo</h5>
+                                    <p style="color: white;" id="mainmemberdesc">Cube Mosaic Artist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card team-member">
+                                <img src="pictures/abt&memb/Team-MnM-2.jpg" class="card-img-top mx-auto mt-3" alt="Ann Smith">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="mainmember">Jaztine Heicel Baltazar</h5>
+                                    <p style="color: white;" id="mainmemberdesc">MnM Reels Expert</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card team-member">
+                                <img src="pictures/abt&memb/Team-MnM-1.jpg" class="card-img-top mx-auto mt-3" alt="Roxie Swanson">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="mainmember">Daryl James Misa</h5>
+                                    <p style="color: white;" id="mainmemberdesc">Member of Team YJ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <div class="container mt-5">
+                <p><h1>Members</h1></p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/75.jpg" class="card-img-top" alt="Mary Brown">
+                            <div class="card-body">
+                                <h5 class="card-title">Ian Guevarra Santos</h5>
+                                <p class="card-subtitle mb-2 text-muted">Curent 3x3x3 Blindfolded NR holder</p>
+                                <br>
+                                <p class="card-text">This person currently holds the world record for solving a 3x3x3 Rubik's Cube blindfolded in the fastest time.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/John.jpg" class="card-img-top" alt="Ann Richmond">
+                            <div class="card-body">
+                                <h5 class="card-title">John Axel Gordo</h5>
+                                <p class="card-subtitle mb-2 text-muted">3x3x3 Multi-Blind NR holder</p>
+                                <br>
+                                <p class="card-text">This individual currently holds the national record for solving multiple 3x3x3 Rubik's Cubes blindfolded within a single attempt.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/73.jpg" class="card-img-top" alt="Nina Greenfield">
+                            <div class="card-body">
+                                <h5 class="card-title">Pysron Eubert Catral</h5>
+                                <p class="card-subtitle mb-2 text-muted">Former Pyraminx NR holder</p>
+                                <br>
+                                <p class="card-text">This person previously held the national record for solving a Pyraminx puzzle but no longer holds that title.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/69.jpg" class="card-img-top" alt="Mary Brown">
+                            <div class="card-body">
+                                <h5 class="card-title">Juan Miguel Y. Magallanes</h5>
+                                <p class="card-subtitle mb-2 text-muted">2x2x2 Cube</p>
+                                <br>
+                                <p class="card-text">"2x2x2 Cube" also known as the Mini Cube, refers to a Rubik's Cube with a 2x2x2 configuration, meaning it has 2 squares on each side.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/63.jpg" class="card-img-top" alt="Ann Richmond">
+                            <div class="card-body">
+                                <h5 class="card-title">Ivan Keith Cariaga</h5>
+                                <p class="card-subtitle mb-2 text-muted">Current Skewb NR Holder</p>
+                                <br>
+                                <p class="card-text">This person currently holds the national record for solving the Skewb puzzle in the fastest time. There are less pieces to put in pace than a regular 3x3 cube.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/Cairon.jpg" class="card-img-top" alt="Nina Greenfield">
+                            <div class="card-body">
+                                <h5 class="card-title">Cairon Sumadchat</h5>
+                                <p class="card-subtitle mb-2 text-muted">5x5x5 Cube</p>
+                                <p class="card-text">The "5x5x5 Cube" refers to a Rubik's Cube with 5 squares on each side, also known as the Professor's Cube, which is more complex than the standard 3x3x3 version.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style=" margin:50px; border:0; height:10px; background-color:white;">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/Ed.jpg" class="card-img-top" alt="Mary Brown">
+                            <div class="card-body">
+                                <h5 class="card-title">John Edison Ubaldo</h5>
+                                <p class="card-subtitle mb-2 text-muted">Former 3x3x3 Fewest Moves NR holder</p>
+                                <br>
+                                <p class="card-text">This person previously held the national record for solving a 3x3x3 Rubik's Cube in the fewest moves but no longer holds that title.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/Gab.jpg" class="card-img-top" alt="Ann Richmond">
+                            <div class="card-body">
+                                <h5 class="card-title">Vince Gabriel Agustin</h5>
+                                <p class="card-subtitle mb-2 text-muted">Clock</p>
+                                <p class="card-text">In Rubik's Cube terminology, "clockwise" refers to turning a specified face 90 degrees in the direction the hands of a clock move when looking directly at that face.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/Stacy.jpg" class="card-img-top" alt="Nina Greenfield">
+                            <div class="card-body">
+                                <h5 class="card-title">Stacy Nicole Mabalot</h5>
+                                <p class="card-subtitle mb-2 text-muted">3x3x3 Cube</p>
+                                <br>
+                                <p class="card-text">The "3x3x3 Cube" refers to the standard Rubik's Cube, which has 3 squares on each side and is the most commonly known version of the puzzle.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/Zian.jpg" class="card-img-top" alt="Mary Brown">
+                            <div class="card-body">
+                                <h5 class="card-title">Prince Zian Principe</h5>
+                                <p class="card-subtitle mb-2 text-muted">Clock</p>
+                                <p class="card-text">In Rubik's Cube terminology, "clockwise" refers to turning a specified face 90 degrees in the direction the hands of a clock move when looking directly at that face.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/Zoie.jpg" class="card-img-top" alt="Ann Richmond">
+                            <div class="card-body">
+                                <h5 class="card-title">Prince Zoei Principe</h5>
+                                <p class="card-subtitle mb-2 text-muted">Clock</p>
+                                <p class="card-text">In Rubik's Cube terminology, "clockwise" refers to turning a specified face 90 degrees in the direction the hands of a clock move when looking directly at that face.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <img src="pictures/abt&memb/XAv.jpg" class="card-img-top" alt="Nina Greenfield">
+                            <div class="card-body">
+                                <h5 class="card-title">Xavier De Vera</h5>
+                                <p class="card-subtitle mb-2 text-muted">Resident Guru</p>
+                                <p class="card-text">A "Resident Guru" refers to an expert or highly knowledgeable person who resides in a particular place or is associated with a specific organization, often providing guidance</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            
+
+            <!-- Footer -->
+            <div class="container-fluid">
+                <footer class="bg-white row row-cols-1 row-cols-lg-2 row-cols-xl-5 p-5 mt-5">
+                    <div class="col mb-3">
+                        <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                            <img src="pictures/logo/logo1.jpg" class="rounded" style="width: 7rem; margin-left: 1rem; margin-right: 1rem;">
+                            <h5 class="text-black">©MnM Cube Shop 2024</h5>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mb-3"></div>
+    
+                    <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                        <h5 class="text-dark">News</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-dark">Home</a></li>
+                            <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-dark">Products</a></li>
+                            <li class="nav-item mb-2"><a href="news.html" class="nav-link p-0 text-dark">News</a></li>
+                            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About Us</a></li>
+                            <li class="nav-item mb-2"><a href="members.html" class="nav-link p-0 text-dark">Members</a></li>
+                            <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0 text-dark">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                        <h5 class="text-dark">Links and Socials</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/MnMCubeShop" target="_blank" class="nav-link p-0 text-dark">Facebook</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank" class="nav-link p-0 text-dark">Youtube</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank" class="nav-link p-0 text-dark">Tiktok</a></li>
+                            <li class="nav-item mb-2"><a href="https://shopee.ph/mnmcubeshopofficial" target="_blank" class="nav-link p-0 text-dark">Shopee</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                        <h5 class="text-dark">Developers</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/mervraphael.carlos" target="_blank" class="nav-link p-0 text-dark">Mervin Raphael Carlos</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/anthonyjames.postrado" target="_blank" class="nav-link p-0 text-dark">Anthony James Postrado</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61552012390944" target="_blank" class="nav-link p-0 text-dark">Cyryll James Rubio</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+            <!-- Footer -->
+        </div>
+    </body>
+</html>

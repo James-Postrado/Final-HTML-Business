@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <title>MnM Cube Shop</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+            body{
+                background-color: black;
+            }
+
+            #navigation{
+                background-image: url("pictures/bg/bgbanner.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            #navselect, #navsocial, .navbar-brand{
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                background-color: white;
+                border-radius: 0.5rem;
+            }
+
+            #navselect, #navsocial, .navbar-brand, h1, h5{
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+            }
+
+            #navselect, #navsocial, .navbar-brand{
+            font-size: 1.2rem;
+            }
+
+            #navselect, #navselectdrop{
+                padding-right: 1rem;
+                padding-left: 1rem;
+                border-style: solid;
+                border-radius: 2rem;
+                border-color: black;
+            }
+
+            #navsocial{
+                border-style: solid;
+                border-color: black;
+            }
+
+            #navselect:hover, #navsocial:hover{
+                filter: brightness(0.5);
+                transform: scale(0.9);
+            }
+
+            .carousel-item{
+                background-image: url("pictures/bg/bgbanner.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+                height: 60%;
+                width: 100%;
+            }
+
+            footer{
+                background-image: url("pictures/bg/bgbannerflipped.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+
+            @media(max-width: 1000px){
+                .navbar-brand, h5{
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="">
+            <!-- Navbar -->
+            <nav class="sticky-top navbar navbar-expand-lg p-3 navbar-white bg-white" id="navigation">
+                <div class="container-fluid">
+                    <div class="mx-auto order-0 bg-white px-3 rounded col text-center">
+                        <a class="mx-auto navbar-brand mx-auto w-100" href="#"><img src="pictures/logo/logo2.jpg" style="width: 5rem;" class="ms-3 rounded">MnM Cube Shop</a>
+                        <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active" id="navselect">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown bg-white" id="navselectdrop">
+                                <a class="nav-link dropdown-toggle" id="navselect" href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Know MnM
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-black">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="members.html">Members</a></li>
+                                    <li><a class="dropdown-item" href="contacts.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="navsocial">
+                                <a class="nav-link mx-2 text-center" href="https://www.facebook.com/MnMCubeShop" target="_blank"><img src="pictures/logo/facebook.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank"><img src="pictures/logo/youtube.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank"><img src="pictures/logo/tiktok.png" style="width: 3.5rem;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+
+            <!-- Splash -->
+                <div class="text-center text-danger px-5 py-3 container-fluid" id=splash>
+                    <div>
+                        <h1>Welcome to MnM Cube Shop</h1>
+                    </div>
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active" id="carousel1">
+                                a
+                            </div>
+                            <div class="carousel-item">
+                                b
+                            </div>
+                            <div class="carousel-item">
+                                c
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                    </div>
+                </div>
+
+            <!-- Footer -->
+            <div class="container-fluid">
+                <footer class="bg-white row row-cols-1 row-cols-lg-2 row-cols-xl-5 p-5 mt-5">
+                    <div class="col mb-3">
+                        <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                            <img src="pictures/logo/logo1.jpg" class="rounded" style="width: 7rem; margin-left: 1rem; margin-right: 1rem;">
+                            <h5 class="text-black">©MnM Cube Shop 2024</h5>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mb-3"></div>
+    
+                    <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                        <h5 class="text-dark">News</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-dark">Home</a></li>
+                            <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-dark">Products</a></li>
+                            <li class="nav-item mb-2"><a href="news.html" class="nav-link p-0 text-dark">News</a></li>
+                            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About Us</a></li>
+                            <li class="nav-item mb-2"><a href="members.html" class="nav-link p-0 text-dark">Members</a></li>
+                            <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0 text-dark">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                        <h5 class="text-dark">Links and Socials</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/MnMCubeShop" target="_blank" class="nav-link p-0 text-dark">Facebook</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank" class="nav-link p-0 text-dark">Youtube</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank" class="nav-link p-0 text-dark">Tiktok</a></li>
+                            <li class="nav-item mb-2"><a href="https://shopee.ph/mnmcubeshopofficial" target="_blank" class="nav-link p-0 text-dark">Shopee</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                        <h5 class="text-dark">Developers</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/mervraphael.carlos" target="_blank" class="nav-link p-0 text-dark">Mervin Raphael Carlos</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/anthonyjames.postrado" target="_blank" class="nav-link p-0 text-dark">Anthony James Postrado</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61552012390944" target="_blank" class="nav-link p-0 text-dark">Cyryll James Rubio</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+            <!-- Footer -->
+        </div>
+    </body>
+</html>
