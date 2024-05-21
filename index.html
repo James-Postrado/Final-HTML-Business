@@ -12,9 +12,15 @@
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
             body{
-                background-color: black;
+                background-color: rgb(21, 29, 73);
+            }
+
+            a{
+                text-decoration: none;
+                color: brown;
             }
 
             #navigation{
@@ -81,11 +87,19 @@
                 background-position: left;
             }
 
-            #carousel2-inner{
+            #carousel3{
+                background-image: url("pictures/indexcarousel2.jpg");
+                background-position: left;
+            }
+
+            #carousel2-inner, #carousel3-inner{
                 background-color: rgba(255, 255, 255, 0.8);
                 width: 90%;
                 height: 90%;
                 margin-top: 1.5rem;
+                padding-top: 2rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
             }
 
             h1{
@@ -104,7 +118,24 @@
                 .navbar-brand, h5{
                     font-size: 1rem;
                 }
+                #carousel2-inner, #carousel3-inner{
+                    padding-top: 2rem;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    font-size: 2rem;
+                }
             }
+
+            .carousel.slide.text-dark{
+                font-family: "Lato", sans-serif;
+                font-size: 5rem;
+            }
+
+            p{
+                font-family: "Rubik", sans-serif;
+                font-size: 1.5rem;
+            }
+
         </style>
     </head>
     
@@ -160,19 +191,19 @@
             <!-- Navbar -->
 
             <!-- Splash -->
-                <div class="text-center text-light px-5 py-3 container-fluid" id=splash>
+                <div class="text-center text-light bg-black px-5 pt-3 pb-5 container-fluid" id=splash>
                     <div>
                         <h1>Welcome to MnM Cube Shop</h1>
                     </div>
-                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div id="carouselExampleRide" class="carousel slide text-dark" data-bs-ride="true">
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active" id="carousel1">
                             </div>
                             <div class="carousel-item" id="carousel2">
-                                <div class="container" id="carousel2-inner"></div>
+                                <div class="container" id="carousel2-inner">The Leading Store for Rubik's Cubes and Puzzles in the Philippines.</div>
                             </div>
                             <div class="carousel-item" id="carousel3">
-                                c
+                                <div class="container" id="carousel2-inner">Join Us for a World of Fun and Puzzle Solving with Friends in a Community.</div>
                             </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -189,6 +220,41 @@
             <!-- Splash -->
 
             <!-- Content -->
+            <div class="container-fluid text-center">
+                
+                <div class="row justify-content-center mx-3 my-3">
+                    
+                    <div class="mx-3 my-3 p-3 col-md-8 col-xl-10 bg-black text-danger rounded">
+                        <a href="products.html">
+                        <h1>Shop</h1>
+                        <img src="pictures/indexcarousel1.jpg" class="w-75 mb-4">
+                        <p class="text-light">Browse our catalogue of diverse puzzles, from standard Rubik's Cubes to differently shaped puzzles, and even miscellaneous items to help you on your cubing journey. Our prices range from budget friendly to the most quality items and world-class brands.</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="row justify-content-center mx-3 my-3">
+                    
+                    <div class="mx-3 my-3 p-3 col-md-8 col-xl-5 bg-black text-danger rounded">
+                        <a href="contacts.html">
+                        <h1>Talk</h1>
+                        <img src="pictures/indexcarousel3.jpg" class="w-75 mb-4">
+                        <p class="text-light">Talk to fellow members of the Speedcubing Community by contacting us. Different reliable members of Team MnM would be glad to assist you with any inquiries, be it related to shopping and buying puzzles, or getting into cubemeets and competitions with other members of the community</p>
+                        </a>
+                    </div>
+                   
+                    <div class="mx-3 my-3 p-3 col-md-8 col-xl-5 bg-black text-danger rounded">
+                        <a href="news.html">
+                        <h1>Participate</h1>
+                        <img src="pictures/indexcarousel4.jpg" class="w-75 mb-4">
+                        <p class="text-light">Visit our News Page and immerse yourself to the world of Speedcubing by participating in events sponsored by our store. Start your Cubing Journey now towards the world of competitive speedcubing with officially-sanctioned competitions brought to you by MnM Cube Shop</p>
+                        </a>
+                    </div>
+                
+                </div>
+            </div>
             <!-- Content -->
                 
             <!-- Footer -->
