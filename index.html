@@ -6,6 +6,10 @@
 
         <title>MnM Cube Shop</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -57,12 +61,36 @@
             }
 
             .carousel-item{
-                background-image: url("pictures/bg/bgbanner.png");
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: right;
                 height: 60%;
                 width: 100%;
+            }
+
+            #carousel1{
+                background-image: url("pictures/logo/logo1.jpg");
+                background-position: left;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: white;
+                background-position: center;
+            }
+
+            #carousel2{
+                background-image: url("pictures/indexcarousel1.jpg");
+                background-position: left;
+            }
+
+            #carousel2-inner{
+                background-color: rgba(255, 255, 255, 0.8);
+                width: 90%;
+                height: 90%;
+                margin-top: 1.5rem;
+            }
+
+            h1{
+                font-family: "Jersey 10", sans-serif;
+                font-size: 4rem;
             }
 
             footer{
@@ -132,19 +160,18 @@
             <!-- Navbar -->
 
             <!-- Splash -->
-                <div class="text-center text-danger px-5 py-3 container-fluid" id=splash>
+                <div class="text-center text-light px-5 py-3 container-fluid" id=splash>
                     <div>
                         <h1>Welcome to MnM Cube Shop</h1>
                     </div>
                     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active" id="carousel1">
-                                a
                             </div>
-                            <div class="carousel-item">
-                                b
+                            <div class="carousel-item" id="carousel2">
+                                <div class="container" id="carousel2-inner"></div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" id="carousel3">
                                 c
                             </div>
                             </div>
@@ -159,6 +186,11 @@
                     </div>
                 </div>
 
+            <!-- Splash -->
+
+            <!-- Content -->
+            <!-- Content -->
+                
             <!-- Footer -->
             <div class="container-fluid">
                 <footer class="bg-white row row-cols-1 row-cols-lg-2 row-cols-xl-5 p-5 mt-5">
