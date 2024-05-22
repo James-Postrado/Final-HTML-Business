@@ -1,0 +1,471 @@
+<html>
+    <head>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+        <title>MnM Cube Shop</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+            body{
+                background-color: rgb(21, 29, 73);
+                
+            }
+
+            #navigation{
+                background-image: url("pictures/bg/bgbanner.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            #navselect, #navsocial, .navbar-brand{
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                background-color: white;
+                border-radius: 0.5rem;
+            }
+
+            #navselect, #navsocial, .navbar-brand, h5{
+                font-size: 1.2rem;
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+                color: black;
+            }
+
+            #navselect, #navselectdrop{
+                padding-right: 1rem;
+                padding-left: 1rem;
+                border-style: solid;
+                border-radius: 2rem;
+                border-color: black;
+            }
+
+            #navsocial{
+                border-style: solid;
+                border-color: black;
+            }
+
+            #navselect:hover, #navsocial:hover{
+                filter: brightness(0.5);
+                transform: scale(0.9);
+            }
+
+            footer{
+                background-image: url("pictures/bg/bgbannerflipped.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+
+            .team-member {
+            text-align: center;
+            margin: 10px 0;
+            background-color: #ffffff00;           
+            border: none;
+            box-shadow: none;
+            color: white;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .team-member h5 {
+            margin-top: 15px;
+            font-weight: bold;
+            
+        }
+        .team-member p {
+            margin: 0;
+            
+        }
+        .team-section {
+            background-color: #f7f9fc;
+            padding: 70px 0;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.962) 50%, rgb(21, 29, 73) 50%);
+            color: white;
+        }
+        .team-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: rgb(21, 29, 73);
+        }
+        .team-section p {
+            font-size: 1rem;
+            color: rgb(21, 29, 73);
+        }
+
+         .card {
+            margin-top: 20px;
+            
+        }
+        .card-img-top {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto 0;
+        }
+        .card-title {
+            margin-top: 10px;
+        }
+        .card-body {
+            text-align: center;
+            
+        }
+        .social-icons a {
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        h1{
+                font-family: "Rubik", sans-serif;
+                margin-top: 6rem;
+                font-size: 10rem;
+            }
+
+        .container-limit{
+            color: white;
+        }
+        .card-body .text-muted{
+            color: white;
+        }
+
+        @media(max-width: 1000px){
+                .navbar-brand, h5{
+                    font-size: 1rem;
+                }
+
+            h1{
+                font-size: 3rem;
+             }
+
+        }
+
+        #banner{
+            height: 90%;
+        }
+
+        #bannerfg{
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: -1rem;
+            margin-left: -3rem;
+            margin-right: -3rem;
+            padding-top: 5rem;
+            height: 100%;
+        }
+
+
+        .bannercap{
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+
+        .catheading{
+            color: black;
+            font-size: 2rem;
+        }
+
+        #dabox:hover{
+            filter: brightness(0.7);
+            transform: scale(0.95);
+            font-size: 2rem;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        </style>
+    </head>
+    
+    <body>      
+            <!-- Navbar -->
+            <nav class="sticky-top navbar navbar-expand-lg p-3 navbar-white bg-white" id="navigation">
+                <div class="container-fluid">
+                    <div class="mx-auto order-0 bg-white px-3 rounded col text-center">
+                        <a class="mx-auto navbar-brand mx-auto w-100" href="#"><img src="pictures/logo/logo2.jpg" style="width: 5rem;" class="ms-3 rounded">MnM Cube Shop</a>
+                        <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active" id="navselect">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown bg-white" id="navselectdrop">
+                                <a class="nav-link dropdown-toggle" id="navselect" href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Know MnM
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-black">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="members.html">Members</a></li>
+                                    <li><a class="dropdown-item" href="contacts.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item" id="navselect">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="navsocial">
+                                <a class="nav-link mx-2 text-center" href="https://www.facebook.com/MnMCubeShop" target="_blank"><img src="pictures/logo/facebook.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank"><img src="pictures/logo/youtube.png" style="width: 3.5rem;"></a>
+                            </li>
+                            <li class="nav-item text-center" id="navsocial">
+                                <a class="nav-link mx-2" href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank"><img src="pictures/logo/tiktok.png" style="width: 3.5rem;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!-- Navbar -->
+
+        <!-- Banner -->
+        <div class="container-fluid justify-content-center text-center text-light px-5 py-3 bg-black" id="banner">
+            <div class="row" id="bannerfg">
+                <div class="col">
+                    <h1>WCA Puzzles</h1>
+                    <p class="bannercap">Can't go wrong with the classics. Standard twisty puzzles accepted in official World Cube Association competitions.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Banner -->
+
+        <!-- 2nd Nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Categories</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="products-wca.html">WCA Puzzles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products-non-wca.html">Non-WCA Puzzles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products-lubes.html">Lubes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products-timers.html">Timers and Mats</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Categories -->
+        <div class="container-fluid justify-content-center">
+            <div class="row mx-auto p-5 w-100 justify-content-center">
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="pictures/products/wca1.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">GAN 12 3x3x3 MAGLEV Rubiks Cube 2021</h5>
+                      <p class="card-text">Price: ₱2,915</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WCAProd1">Read Description</a>
+                      
+                        <div class="modal fade" id="WCAProd1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title fs-5" id="exampleModalLabel">GAN 12 3x3x3 MAGLEV Rubiks Cube 2021</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p>[MATTE] The GAN12 MagLev (Matte) 3x3 is at the very peak of 3x3 innovation and design. This flagship puzzle includes adjustable magnets in the pieces and an adjustable magnetic levitation tension/compression system. This technology utilizes opposing magnets to imitate the feel of spring while also reducing friction and spring noise. This version has a matte finish on the outer surface.</p>
+                                    <hr>
+                                    <p>Product Specifications:</p>                                                                                                       
+                                    <p>Name:  GAN12 MAGLEV Magnetic Levitation</p>
+                                    <p>Material: ABS Engineering Environmental Plastic</p>
+                                    <p>Color: Stickerless </p>
+                                    <p>Cubes size: 5.6*5.6*5.6 CM</p>
+                                    <p>Product weight: 0.25kg</p>
+                                    <p>Packing list:1 * Magic Cubes with box</p>
+                                    <p>Tutorial: yes.</p>
+                                </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" onclick="document.location='contacts.html'">Inquire/Contact Us</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card m-5" style="width: 18rem;">
+                    <img src="pictures/products/wca2.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">MoYu RS3M Super MagLev Ball 2020</h5>
+                      <p class="card-text">Price: ₱1,045</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WCAProd2">Read Description</a>
+                      
+                        <div class="modal fade" id="WCAProd2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title fs-5" id="exampleModalLabel">MoYu RS3M Super MagLev Ball 2020</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p>Smooth and fast ,solve it when each side matches. Black sticker or Stickerless version never fade and does not need stickers.
+                                        Magic cube can foster your kid's sense of space and enhance a child's memory.Suitable for beginner and professional player.
+                                        Ultimate Gift for Kids They are always awesome for both kids and adults, you can take them anywhere.Need something for your kids to do in the car or on the airplane? Add to your buy now!</p>
+                                    <hr>
+                                    <p>Product Specifications:</p>                                                                                                       
+                                    <p>Name:  MoYu RS3M Super MagLev Ball 2020</p>
+                                    <p>Puzzle Type: 3x3x3</p>
+                                    <p>Color: Stickerless </p>
+                                    <p>Cubes size: 5.6*5.6*5.6 CM</p>
+                                    <p>Packing list:1 * Magic Cubes with box</p>
+                                    <p>Tutorial: yes.</p>
+                                </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" onclick="document.location='contacts.html'">Inquire/Contact Us</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card m-5" style="width: 18rem;">
+                    <img src="pictures/products/wca3.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">2x2x2 Meilong Stickerless 2x2 Cube</h5>
+                      <p class="card-text">Price: ₱55</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WCAProd3">Read Description</a>
+                      
+                        <div class="modal fade" id="WCAProd3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title fs-5" id="exampleModalLabel">2x2x2 Meilong Stickerless 2x2 Cube</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p>.The selection of high quality ABS engineering plastic material, it features wear resistant and durable performance, and not easy to damage. International standard color matching, solid color structure, get rid of color troubles, beautiful and durable. With new splicing structure, each part is tightly fastened, impact resistant, anti-cracking, not easy to fall apart. High-capacity rounded design for excellent fault tolerance. Creative cube corner, each layer is locked in layers to prevent the falling of the frame and the corner caused by the rotation. The new buckle positioning solves the problem of jamming, flexibly adapts to the high-speed rotation of various techniques, and has excellent verticality, which brings a good touch and stability. Practice your brain and improve your memory and hand skills. To brings you a smoother turning experience</p>
+                                    <hr>
+                                    <p>Product Specifications:</p>                                                                                                       
+                                    <p>Name:  Meilong Stickerless 2x2 Cube</p>
+                                    <p>Puzzle Type: 2x2x2</p>
+                                    <p>Material: ABS Engineering Environmental Plastic</p>
+                                    <p>Color: Stickerless </p>
+                                    <p>Cubes size: 5*5*5 CM</p>
+                                    <p>Product weight: 0.60kg</p>
+                                    <p>Packing list:1 * Magic Cubes with box</p>
+                                    <p>Tutorial: yes.</p>
+                                </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" onclick="document.location='contacts.html'">Inquire/Contact Us</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card m-5" style="width: 18rem;">
+                    <img src="pictures/products/wca4.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">YongJun MGC 4x4 UV MICRO Magnetic</h5>
+                      <p class="card-text">Price: ₱1,210</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WCAProd1">Read Description</a>
+                      
+                        <div class="modal fade" id="WCAProd1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title fs-5" id="exampleModalLabel">YongJun MGC 4x4 UV MICRO Magnetic</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p>The MGC 4x4 is a new magnetic 4x4 speed cube from YJ. This puzzle offers flagship performance at a fraction of a flagship price. It features smooth turning, and a medium magnetic feel.</p>
+                                </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" onclick="document.location='contacts.html'">Inquire/Contact Us</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- Categories -->
+        
+        <!-- Footer -->
+        <div class="container-fluid">
+            <footer class="bg-white row row-cols-1 row-cols-lg-2 row-cols-xl-5 p-5 mt-5">
+                <div class="col mb-3">
+                    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img src="pictures/logo/logo1.jpg" class="rounded" style="width: 7rem; margin-left: 1rem; margin-right: 1rem;">
+                        <h5 class="text-black">©MnM Cube Shop 2024</h5>
+                    </a>
+                    
+                </div>
+
+                <div class="col mb-3"></div>
+
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">News</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-dark">Home</a></li>
+                        <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-dark">Products</a></li>
+                        <li class="nav-item mb-2"><a href="news.html" class="nav-link p-0 text-dark">News</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="members.html" class="nav-link p-0 text-dark">Members</a></li>
+                        <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0 text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">Links and Socials</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/MnMCubeShop" target="_blank" class="nav-link p-0 text-dark">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.youtube.com/channel/UCba8vFnr_73uHYzb9--5-aA?app=desktop" target="_blank" class="nav-link p-0 text-dark">Youtube</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.tiktok.com/@mnmcubeshop_official?lang=en" target="_blank" class="nav-link p-0 text-dark">Tiktok</a></li>
+                        <li class="nav-item mb-2"><a href="https://shopee.ph/mnmcubeshopofficial" target="_blank" class="nav-link p-0 text-dark">Shopee</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 bg-white p-4" style="--bs-bg-opacity: .9;">
+                    <h5 class="text-dark">Developers</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/mervraphael.carlos" target="_blank" class="nav-link p-0 text-dark">Mervin Raphael Carlos</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/anthonyjames.postrado" target="_blank" class="nav-link p-0 text-dark">Anthony James Postrado</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61552012390944" target="_blank" class="nav-link p-0 text-dark">Cyryll James Rubio</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <!-- Footer -->
+    </body>
+</html>
